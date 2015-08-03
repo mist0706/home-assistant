@@ -20,13 +20,12 @@ host
 The variable you wish to display. See the configuration example above for a
 list of all available variables.
 """
-import logging
 
-import homeassistant.util.dt as dt_util
 from homeassistant.helpers.entity import Entity
 import urllib
+import logging
 
-
+REQUIREMENTS = ['beautifulsoup4>=4.4.0']
 _LOGGER = logging.getLogger(__name__)
 OPTION_TYPES = {
     'host': 'Host'
